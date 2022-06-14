@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Mídias - áudio</h1>
+        <h2>Reproduzir audio</h2>
+        <audio src="midias/musica.mp3" controls loop></audio>
+            <h3>Comandos adicionais:</h3>
+            <p>autoplay: audio começa a tocar sozinho.</p>
+            <p>controls: adiciona controles de audio.</p>
+            <p>loop: audio recomeça quando acabar.</p>
+            <p>preload="metadata": é a configuração padrão.</p>
+        
+        <h2>Multiplos formatos de áudio:</h2>
+            <audio controls preload="metadata">
+                <source src="midias/musica.mp3" type="audio/mpeg">
+                <source src="midias/musica.ogg" type="audio/ogg">
+                <source src="midias/musica.wav" type="audio/wav">
+                <p>Caso um não funcione o navegador usará outro, caso nunhum funcione ele mostrará esse páragrafo! (pode colocar um link de download aqui também).</p>
+            </audio>
+</body>
+</html>
